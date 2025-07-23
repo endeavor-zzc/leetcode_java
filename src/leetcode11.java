@@ -18,6 +18,11 @@ public class leetcode11 {
     }
 }
 class Solution11{
+    /**
+     * 双指针，一个指针指向开头，一个指针指向末尾，相当于拿着一块大木板找更大的木板
+     * @param height
+     * @return
+     */
     public int maxArea(int[] height){
         int max = 0;
         int left = 0; //左指针，指向开头
