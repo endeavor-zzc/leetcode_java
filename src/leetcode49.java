@@ -21,7 +21,7 @@ public class leetcode49 {
 class Solution49{
     public List<List<String>> groupAnagrams(String[] strs){
         HashMap<String, List<String>> hashMap = new HashMap<>();
-        for (var str : strs) {
+        for (String str : strs) {
             char[] array = str.toCharArray();
             Arrays.sort(array);
             String sortedStr = new String(array);
