@@ -1,4 +1,5 @@
-import java.lang.reflect.Array;
+package Hash;
+
 import java.util.*;
 
 public class leetcode49 {
