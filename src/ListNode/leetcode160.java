@@ -1,4 +1,4 @@
-
+package ListNode;
 
 public class leetcode160 {
     public static void main(String[] args){

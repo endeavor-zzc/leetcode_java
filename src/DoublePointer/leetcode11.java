@@ -1,4 +1,5 @@
-import java.util.Arrays;
+package DoublePointer;
+
 import java.util.Scanner;
 
 public class leetcode11 {

@@ -1,3 +1,5 @@
+package NormalArray;
+
 import java.util.Scanner;
 
 public class leetcode189 {

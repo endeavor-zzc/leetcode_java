@@ -1,3 +1,5 @@
+package ListNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,19 +14,19 @@ public class leetcode234 {
 
 /**
  * 这个创建链表的方式与下列创造列表方式不同：
- * 方法一：class ListNode {
+ * 方法一：class ListNode.ListNode {
  *     int val;
- *     ListNode next; // 成员变量的类型是ListNode
- *     ListNode (int x){
+ *     ListNode.ListNode next; // 成员变量的类型是ListNode
+ *     ListNode.ListNode (int x){
  *         val = x;
  *         next = null; // 默认next的值是null
  *     }
  * }
- * 方法一只有一个构造函数，只能用 new ListNode(5) 的方式创建一个节点，默认 next = null
- * 如果要连接链表，必须手动赋值node.next = new ListNode(6);
+ * 方法一只有一个构造函数，只能用 new ListNode.ListNode(5) 的方式创建一个节点，默认 next = null
+ * 如果要连接链表，必须手动赋值node.next = new ListNode.ListNode(6);
  *
  * 而本题中的方法提供了三个构造函数，更加灵活，
- * new ListNode234(5, new ListNode234(6))  直接创造了一个5->6的节点
+ * new ListNode.ListNode234(5, new ListNode.ListNode234(6))  直接创造了一个5->6的节点
  *
  */
 class ListNode234{

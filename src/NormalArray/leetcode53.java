@@ -1,3 +1,4 @@
+package NormalArray;
 
 import java.util.Scanner;
 

@@ -1,3 +1,5 @@
+package ListNode;
+
 public class leetcode206 {
     public static void main(String[] args){
         ListNode206 head = new ListNode206(1);

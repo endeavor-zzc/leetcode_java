@@ -1,3 +1,5 @@
+package Substring;
+
 import java.util.*;
 
 public class leetcode560 {
