@@ -31,10 +31,14 @@ public class leetcode160 {
 // 构建链表结构
 class ListNode {
     int val;
-    ListNode next; // 成员变量的类型是ListNode
-    ListNode (int x){
-        val = x;
-        next = null; // 默认next的值是null
+    ListNode next;
+    ListNode() {}
+    ListNode(int val){
+        this.val = val;
+    }
+    ListNode(int val, ListNode next){
+        this.val = val;
+        this.next = next;
     }
 }
 class Solution160{

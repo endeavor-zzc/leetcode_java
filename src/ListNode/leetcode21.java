@@ -37,7 +37,7 @@ class Solution21_1 {
      */
     public ListNode21 mergeTwoLists(ListNode21 list1, ListNode21 list2){
         //新创建一个链表，指向空，表示合并完链表之后的头节点的前一个节点，这样避免单独处理头节点
-        ListNode21 NewList = new ListNode21();
+        ListNode21 NewList = new ListNode21(); //哨兵节点
         ListNode21 cur = NewList;
         while (list1 != null && list2 != null){
             if (list1.val < list2.val){
