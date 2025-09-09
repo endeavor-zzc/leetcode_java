@@ -2,7 +2,16 @@ package ListNode;
 
 public class leetcode2 {
     public static void main(String[] args){
-
+        ListNode list1 = new ListNode(7, new ListNode(0, new ListNode(8)));
+        ListNode list2 = new ListNode(3, new ListNode(6, new ListNode(7)));
+        Solution2 solution2 = new Solution2();
+        ListNode result = solution2.addTwoNumbers(list1, list2);
+        while(result != null){
+            System.out.print(result.val);
+            if (result.next != null)
+                System.out.print("->");
+            result = result.next;
+        }
     }
 }
 
