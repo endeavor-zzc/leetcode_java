@@ -1,6 +1,5 @@
 package binarytree;
 
-import com.sun.source.tree.Tree;
 
 public class leetcode101 {
     public static void main(String[] args){
