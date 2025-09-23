@@ -66,7 +66,7 @@ class Solution102 {
             int n = q.size();
             List<Integer> vals = new ArrayList<>(n);
             while (n-- > 0){
-                TreeNode node = q.poll();
+                TreeNode node = q.poll(); // 取出并删除头部元素
                 vals.add(node.val);
                 if (node.left != null)
                     q.add(node.left);
