@@ -63,7 +63,7 @@ class Solution102 {
         Queue<TreeNode> q = new ArrayDeque<>();
         q.add(root);
         while(!q.isEmpty()){
-            int n = q.size();
+            int n = q.size(); //记录的是当前层的节点个数
             List<Integer> vals = new ArrayList<>(n);
             while (n-- > 0){
                 TreeNode node = q.poll(); // 取出并删除头部元素

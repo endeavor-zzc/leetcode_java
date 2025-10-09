@@ -23,9 +23,10 @@ class TreeNode{
 
 public class leetcode94 {
     public static void main(String[] args){
-        TreeNode leftchild = new TreeNode(2);
-        TreeNode rightchild = new TreeNode(3);
-        TreeNode root = new TreeNode(1, leftchild, rightchild);
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(1);
+        root.right = new TreeNode(4);
+        root.left.right = new TreeNode(2);
         Solution94 solution94 = new Solution94();
         List<Integer> result = new ArrayList<>();
         result = solution94.inorderTraversal(root);
