@@ -40,4 +40,39 @@ class Solution199{
         }
         return ans;
     }
+
+    /**
+     *  先递归右子树，再递归左子树，当某个深度首次到达时，对应的节点就在右视图中
+     * @param root
+     * @return
+     */
+    public List<Integer> rightSideView_2(TreeNode root){
+        List<Integer> ans = new ArrayList<>();
+        dfs(root, 0, ans);
+        return ans;
+    }
+
+    private void dfs(TreeNode root, int depth, List<Integer> ans){
+        if (root == null)
+            return;
+        /**
+         * depth表示当前层数，ans.size()表示当前结果已经记录了多少最右节点
+         *         1
+         *        / \
+         *       2   3
+         *        \   \
+         *         5   4
+         * | 递归层级 | 当前节点 | depth | ans.size() | 是否加入 | ans结果|
+         * | ---- | ---- | ----- | ---------- | ---- | --------- |
+         * | 1️⃣  | 1    | 0     | 0          | ✅ 是  | [1]       |
+         * | 2️⃣  | 3    | 1     | 1          | ✅ 是  | [1, 3]    |
+         * | 3️⃣  | 4    | 2     | 2          | ✅ 是  | [1, 3, 4] |
+         * | 4️⃣  | 2    | 1     | 3          | ❌ 否  | [1, 3, 4] |
+         * | 5️⃣  | 5    | 2     | 3          | ❌ 否  | [1, 3, 4] |
+         */
+        if (depth == ans.size()) //表示深度首次遇到
+            ans.add(root.val);
+        dfs(root.right, depth + 1, ans);
+        dfs(root.left, depth + 1, ans);
+    }
 }
