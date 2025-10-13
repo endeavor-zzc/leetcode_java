@@ -15,7 +15,7 @@ class Solution124{
         dfs(root);
         return ans;
     }
-
+    //和543题一样
     private int dfs(TreeNode node){
         if (node == null)
             return 0;
