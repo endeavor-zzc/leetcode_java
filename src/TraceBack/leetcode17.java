@@ -26,7 +26,12 @@ class Solution17{
         return result;
     }
 
-
+    /**
+     *
+     * @param digits 数字组合
+     * @param index 索引位置
+     * @param result 最终结果
+     */
     private void backtrack(String digits, int index, List<String> result){
         if (sb.length() == digits.length()){
             result.add(sb.toString());

@@ -30,6 +30,7 @@ class Solution78{
         ├─ [2]
         │  └─ [2,3]
         └─ [3]
+        下一个该选哪个
      */
     private void backtrack(int[] nums, List<Integer> output, List<List<Integer>> res, int i){
         //每次进入递归，当前的output表示已经选择的一部分

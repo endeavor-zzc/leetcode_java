@@ -55,13 +55,21 @@ class Solution46{
     第二层递归
 
      */
-    private void backtrack(int n, List<Integer> output, List<List<Integer>> res, int first){
-        if (first == n)
+
+    /**
+     *
+     * @param n 数组长度
+     * @param output 其中一次的全排列结果
+     * @param res 最终的结果
+     * @param index 指针直到第几个
+     */
+    private void backtrack(int n, List<Integer> output, List<List<Integer>> res, int index){
+        if (index == n)
             res.add(new ArrayList<>(output));  //这里不是add(output)否则 res 中保存的是对同一output的引用，最后都会变为同一个排列
-        for (int i = first; i < n; i++) {
-            Collections.swap(output, first, i);
-            backtrack(n, output, res, first + 1);
-            Collections.swap(output, first, i); //回溯
+        for (int i = index; i < n; i++) {
+            Collections.swap(output, index, i);
+            backtrack(n, output, res, index + 1);
+            Collections.swap(output, index, i); //回溯
         }
     }
 }
