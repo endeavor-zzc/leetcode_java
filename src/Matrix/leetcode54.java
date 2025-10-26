@@ -6,7 +6,13 @@ import java.util.List;
 /**
  * 螺旋矩阵
  */
-public class leetcode54 {
+public class leetcode54{
+    public static void main(String[] args){
+
+    }
+}
+
+class Solution54 {
     private static final int[][] DIRS = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}}; //首先向右走，然后向下走，然后向左走，然后向上走
 
     public List<Integer> spiralOrder(int[][] matrix){
